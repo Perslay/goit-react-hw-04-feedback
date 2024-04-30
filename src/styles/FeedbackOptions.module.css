@@ -1,0 +1,51 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin: 1.5rem 0;
+}
+
+.listItem {
+  width: 100%;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.good {
+  background-color: #beb;
+  composes: button;
+}
+
+.neutral {
+  background-color: #eeb;
+  composes: button;
+}
+
+.bad {
+  background-color: #ebb;
+  composes: button;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .list {
+    gap: 1.5rem;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 1rem;
+  }
+}

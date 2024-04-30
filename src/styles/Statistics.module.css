@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.listItem {
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .list {
+    font-size: 18px;
+    gap: 1.3rem;
+    width: 60%;
+  }
+}
